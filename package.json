@@ -1,0 +1,30 @@
+{
+  "name": "cjs2iife",
+  "version": "0.1.0",
+  "description": "commonjs module to iffe code",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/tasks/*.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wuhy/cjs2iife.git"
+  },
+  "bugs": {
+    "url": "http://github.com/wuhy/cjs2iife/issues"
+  },
+  "keywords": [
+    "commonjs",
+    "iffe"
+  ],
+  "author": "sparklewhy@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^2.3.4",
+    "expect.js": "^0.3.1"
+  },
+  "dependencies": {
+    "esprima": "^2.7.1",
+    "estraverse": "^4.1.1"
+  }
+}

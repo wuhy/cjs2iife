@@ -1,9 +1,9 @@
 (function (window) {
 
     /**
-     * require 定义
+     * get the given module id definition
      *
-     * @param {string} id 要 require 的模块的绝对 id
+     * @param {string} id the absolute module id to require
      * @return {*}
      * @private
      */
@@ -19,24 +19,19 @@
         return value;
     };
 
-    // 所有用到的名称空间定义
-    var _global = {"common":{"b":{},"c":{}},"a":{}};
+    // init the namespace
+    var _global = {"common":{"c":{},"b":{}},"a":{}};
 
-    // 所有模块的定义
+    // all modules definition
     
 
 var _exports = {};
 var _module = {exports: _exports};
 
 (function (module, exports, require) {
-    /**
- * @file 入口模块
- */
-exports.hello = function () {
-    var b = require('common/b');
-};
+    var a = 33;
 })(_module, _exports, _require);
-_global['a'] = _module.exports;
+_global['common']['c'] = _module.exports;
 
 
 _exports = {};
@@ -55,9 +50,14 @@ _exports = {};
 _module = {exports: _exports};
 
 (function (module, exports, require) {
-    var a = 33;
+    /**
+ * @file 入口模块
+ */
+exports.hello = function () {
+    var b = require('common/b');
+};
 })(_module, _exports, _require);
-_global['common']['c'] = _module.exports;
+_global['a'] = _module.exports;
 
 
 })(window);

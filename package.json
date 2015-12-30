@@ -29,6 +29,6 @@
     "estraverse": "^4.1.1",
     "etpl": "^3.0.1",
     "lodash": "^3.10.1",
-    "uglify-js": "*"
+    "uglify-js": "^2.6.1"
   }
 }

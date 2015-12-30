@@ -24,7 +24,11 @@
     "expect.js": "^0.3.1"
   },
   "dependencies": {
+    "escodegen": "^1.7.1",
     "esprima": "^2.7.1",
-    "estraverse": "^4.1.1"
+    "estraverse": "^4.1.1",
+    "etpl": "^3.0.1",
+    "lodash": "^3.10.1",
+    "uglify-js": "*"
   }
 }

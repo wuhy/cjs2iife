@@ -2,7 +2,7 @@
 cjs2iffe
 ========
 
-[![Build Status](https://travis-ci.org/wuhy/cjs2iife.svg?branch=master)](https://travis-ci.org/wuhy/cjs2iife) [![Dependencies Status](https://david-dm.org/wuhy/cjs2iife.png)](https://david-dm.org/wuhy/cjs2iife) [![NPM Version](https://img.shields.io/npm/v/cjs2iife.svg?style=flat)](https://npmjs.org/package/cjs2iife)
+[![Build Status](https://travis-ci.org/wuhy/cjs2iife.svg?branch=master)](https://travis-ci.org/wuhy/cjs2iife) [![Dependencies](https://img.shields.io/david/wuhy/cjs2iife.svg?style=flat)](https://david-dm.org/wuhy/cjs2iife) [![NPM Version](https://img.shields.io/npm/v/cjs2iife.svg?style=flat)](https://npmjs.org/package/cjs2iife)
 
 > Convert all commonjs files to one immediately-invoked-function-expression file
 

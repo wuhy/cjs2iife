@@ -7,7 +7,7 @@ describe('CommonJS Module to IFFE code', function () {
     it('should convert', function () {
         expect(converter({
             dir: path.join(__dirname, '..', 'fixtures', 'cjs1'),
-            main: 'a' //,
+            main: 'a' // ,
             // output: path.join(__dirname, '..', 'fixtures', 'combine.js')
         })).to.eql(helper.readFile('combine.js'));
     });

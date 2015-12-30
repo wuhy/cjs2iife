@@ -9,7 +9,7 @@
      */
     var _require = function (id) {
         var segments = id.split('/');
-        var value = window;
+        var value = ${{globalVarName}};
         for (var i = 0, len = segments.length; i < len; i++) {
             var key = segments[i];
             if (key) {

@@ -14,7 +14,7 @@
  * @param {string=} options.output 输出目标文件
  * @return {string}
  */
-exports.convert = function (options) {
+module.exports = exports = function (options) {
     var _ = require('lodash');
     var converter = require('./lib/converter');
     var workingDir = process.cwd();

@@ -12,6 +12,7 @@
  *                 未指定，将默认把指定的文件目录下的 `index` 作为入口模块
  * @param {boolean|Object=} options.compress 是否压缩转换后的代码，或者压缩选项
  * @param {string=} options.output 输出目标文件
+ * @param {string=} options.exports 把所有模块对象导出到全局的变量名，可选
  * @return {string}
  */
 module.exports = exports = function (options) {

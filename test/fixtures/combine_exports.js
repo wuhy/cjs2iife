@@ -22,6 +22,8 @@
     // init the namespace
     var _global = {"common":{"c":{},"b":{}},"a":{}};
     
+    window.myGlobalObj = _global;
+    
     // all modules definition
     
 

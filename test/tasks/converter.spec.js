@@ -7,9 +7,18 @@ describe('CommonJS Module to IFFE code', function () {
     it('should convert', function () {
         expect(converter({
             dir: path.join(__dirname, '..', 'fixtures', 'cjs1'),
-            main: 'a' // ,
-            // output: path.join(__dirname, '..', 'fixtures', 'combine.js')
+            main: 'a' ,
+            output: path.join(__dirname, '..', 'fixtures', 'combine.js')
         })).to.eql(helper.readFile('combine.js'));
+    });
+
+    it('should export globa variable', function () {
+        expect(converter({
+            dir: path.join(__dirname, '..', 'fixtures', 'cjs1'),
+            main: 'a' ,
+            exports: 'myGlobalObj' // ,
+            // output: path.join(__dirname, '..', 'fixtures', 'combine_exports.js')
+        })).to.eql(helper.readFile('combine_exports.js'));
     });
 
     it('should compress converted code', function () {

@@ -21,7 +21,9 @@
 
     // init the namespace
     var ${{globalVarName}} = ${{namespaceDefine|raw}};
-
+    <!-- if: ${{exports}} -->
+    window.${{exports}} = ${{globalVarName}};
+    <!-- /if -->
     // all modules definition
     ${{moduleDefines|raw}}
 })(window);

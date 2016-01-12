@@ -4,7 +4,13 @@
   "description": "commonjs module to iffe code",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/tasks/*.spec.js"
+    "test": "npm run lint && npm run unit",
+    "lint": "fecs check",
+    "unit": "mocha test/tasks/*.spec.js",
+    "cover": "npm run cover-local && npm run coveralls",
+    "cover-local": "istanbul cover _mocha test/tasks/*.spec.js",
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
+    "pre-release": "npm test"
   },
   "repository": {
     "type": "git",
@@ -20,8 +26,11 @@
   "author": "sparklewhy@gmail.com",
   "license": "MIT",
   "devDependencies": {
-    "mocha": "^2.3.4",
-    "expect.js": "^0.3.1"
+    "coveralls": "^2.11.6",
+    "expect.js": "^0.3.1",
+    "fecs": "^0.4.19",
+    "istanbul": "^0.4.1",
+    "mocha": "^2.3.4"
   },
   "dependencies": {
     "escodegen": "^1.7.1",
